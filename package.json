@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node scripts/index.ts"
+    "jd": "ts-node scripts/jd-parse.ts",
+    "start": "ts-node server/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,8 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "@babel/core": "^7.22.9",
+    "@dqbd/tiktoken": "^1.0.7",
     "langchain": "^0.0.111",
     "openai": "^3.3.0",
     "pdf-parse": "^1.1.1",
